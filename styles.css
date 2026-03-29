@@ -50,7 +50,7 @@ a {
 }
 
 .main-logo {
-  width: 220px;
+  width: 260px;
   max-width: 100%;
   height: auto;
 }
@@ -70,7 +70,7 @@ a {
 
 .hero {
   padding: 54px 0 40px;
-  background: linear-gradient(180deg, #ffffff 0%, #eef3ff 100%);
+  background: linear-gradient(180deg, #0f2b73 0%, #0a1f57 100%);
 }
 
 .hero-grid {
@@ -81,7 +81,7 @@ a {
 }
 
 .eyebrow {
-  color: #d03a31;
+  color: #f0d24a;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -97,12 +97,12 @@ a {
   margin: 0 0 14px;
   font-size: 60px;
   line-height: 1.03;
-  color: #17337d;
+  color: #ffffff;
 }
 
 .hero-text {
   font-size: 21px;
-  color: #333;
+  color: rgba(255, 255, 255, 0.96);
   max-width: 720px;
   margin: 0;
 }
@@ -129,7 +129,7 @@ a {
 }
 
 .btn-blue {
-  background: #17337d;
+  background: #3b4fbd;
   color: #fff;
 }
 
@@ -143,7 +143,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  color: #333;
+  color: rgba(255, 255, 255, 0.95);
   font-weight: 700;
   font-size: 16px;
 }
@@ -369,7 +369,7 @@ a {
   background: #121212;
   color: #fff;
   text-align: center;
-  padding: 28px 0 90px;
+  padding: 28px 0 110px;
 }
 
 .footer-inner p {
@@ -379,7 +379,7 @@ a {
 .floating-call {
   position: fixed;
   right: 18px;
-  bottom: 18px;
+  bottom: 92px;
   background: #cf342d;
   color: #fff;
   text-decoration: none;
@@ -416,7 +416,7 @@ a {
   }
 
   .main-logo {
-    width: 180px;
+    width: 200px;
   }
 
   .hero {
@@ -467,7 +467,7 @@ a {
 
   .floating-call {
     right: 14px;
-    bottom: 14px;
+    bottom: 86px;
     padding: 14px 18px;
   }
 }
