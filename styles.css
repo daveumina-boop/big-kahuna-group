@@ -1,344 +1,409 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
   color: #111;
-  background: #ffffff;
+  background: #f4f4f4;
 }
 
-/* CONTAINER */
 .container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
-/* HEADER */
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .site-header {
   background: #ffffff;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  gap: 20px;
+  padding: 14px 0;
 }
 
 .main-logo {
-  max-width: 260px;
-  width: 100%;
+  width: 280px;
+  max-width: 100%;
   height: auto;
 }
 
+.main-nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
 .main-nav a {
-  margin-left: 20px;
   text-decoration: none;
-  color: #0a1f44;
-  font-weight: bold;
+  color: #102b6a;
+  font-weight: 700;
+  font-size: 17px;
 }
 
 .main-nav a:hover {
-  color: red;
+  color: #d9342b;
 }
 
-/* HERO */
 .hero {
-  padding: 50px 0;
-  background: linear-gradient(to bottom, #0a1f44, #091933);
-  color: white;
+  background: linear-gradient(135deg, #081d4a 0%, #0e2f78 100%);
+  color: #fff;
+  padding: 70px 0 50px;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.hero-copy h1 {
-  font-size: 40px;
-  margin-bottom: 15px;
-}
-
-.hero-text {
-  font-size: 18px;
-  margin-bottom: 20px;
+.hero-copy-wrap {
+  max-width: 760px;
 }
 
 .eyebrow {
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  color: #ffd700;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+  color: #f0d24a;
 }
 
-/* HERO IMAGE */
-.bobby-logo {
-  width: 100%;
-  max-width: 450px;
-}
-
-/* BUTTONS */
-.hero-buttons {
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.08;
   margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-text {
+  font-size: 24px;
+  line-height: 1.55;
+  margin-bottom: 26px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 22px;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 20px;
-  margin-right: 10px;
-  border-radius: 6px;
+  padding: 15px 24px;
+  border-radius: 10px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 18px;
 }
 
 .btn-red {
-  background: red;
+  background: #ef3b2d;
   color: white;
 }
 
 .btn-blue {
-  background: #1e3a8a;
+  background: #2a47a8;
   color: white;
 }
 
 .btn-light {
   background: #ffffff;
-  color: #0a1f44;
+  color: #102b6a;
 }
 
-/* TRUST BAR */
 .trust-bar {
-  font-size: 14px;
-  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.92);
 }
 
-.trust-bar span {
-  display: block;
-  margin-top: 5px;
+.hero-logo-section {
+  background: #081d4a;
+  padding: 10px 0 34px;
 }
 
-/* BANNER */
+.hero-logo-full {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
 .cedar-point-banner {
-  background: #ffd700;
-  color: #0a1f44;
+  background: #f0d24a;
+  color: #102b6a;
   text-align: center;
-  padding: 30px 20px;
+  padding: 38px 20px;
 }
 
 .cedar-point-banner h2 {
-  font-size: 26px;
-  margin-bottom: 10px;
+  font-size: 52px;
+  line-height: 1.15;
+  margin-bottom: 14px;
 }
 
-/* SECTIONS */
+.cedar-point-banner p {
+  font-size: 24px;
+  line-height: 1.5;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .section {
-  padding: 50px 0;
+  padding: 80px 0;
 }
 
 .section-heading {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
 }
 
 .section-heading h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-size: 52px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  color: #111;
 }
 
-/* SERVICES */
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+.section-heading p {
+  font-size: 24px;
+  line-height: 1.55;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
 }
 
-.service-card {
-  background: #f7f7f7;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.service-card h3 {
-  margin-bottom: 10px;
-}
-
-/* INVENTORY */
-.inventory-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.vehicle-card {
-  background: #f7f7f7;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.vehicle-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.vehicle-card-body {
-  padding: 15px;
-}
-
-.price {
-  font-weight: bold;
-  color: red;
-}
-
-/* RENTALS */
-.rentals-copy {
-  display: grid;
-  gap: 20px;
-}
-
-.rental-block {
-  background: #f7f7f7;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.rentals-cta {
-  text-align: center;
-  margin-top: 20px;
-}
-
-/* STEPS */
-.steps-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.step-card {
-  text-align: center;
-}
-
-.step-number {
-  font-size: 30px;
-  font-weight: bold;
-  color: red;
-}
-
-/* CONTACT */
+.service-grid,
+.inventory-grid,
+.rentals-copy,
+.steps-grid,
 .contact-grid {
   display: grid;
+  gap: 24px;
+}
+
+.service-grid,
+.inventory-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.rentals-copy {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.steps-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-grid {
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
 }
 
-.contact-card {
-  background: #f7f7f7;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-/* FLOATING CALL BUTTON */
-.floating-call {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: red;
-  color: white;
-  padding: 15px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* FOOTER */
-.site-footer {
-  background: #0a1f44;
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .hero-grid,
-  .service-grid,
-  .inventory-grid,
-  .steps-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .main-nav {
-    display: none;
-  }
-
-  .hero-copy h1 {
-    font-size: 28px;
-  }
-}
-/* MAKE HERO FULL WIDTH + BIGGER */
-.hero {
-  padding: 80px 0;
-}
-
-/* FULL WIDTH HERO IMAGE SECTION */
-.hero-image-full {
-  width: 100%;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  padding: 40px 0;
-}
-
-.hero-image-full img {
-  width: 100%;
-  max-width: 700px;
-}
-
-/* MAKE HEADLINE BIGGER */
-.hero-copy h1 {
-  font-size: 46px;
-  line-height: 1.2;
-}
-
-/* BUTTONS STRONGER */
-.btn {
-  font-size: 16px;
-  padding: 14px 24px;
-  border-radius: 8px;
-}
-
-/* CARDS MORE PREMIUM */
 .service-card,
 .vehicle-card,
 .rental-block,
 .contact-card {
   background: #ffffff;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  border-radius: 12px;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
 }
 
-/* SECTION SPACING */
-.section {
-  padding: 70px 0;
+.service-card,
+.rental-block,
+.contact-card {
+  padding: 28px;
 }
 
-/* INVENTORY IMAGE BIGGER */
+.service-card h3,
+.rental-block h3 {
+  font-size: 24px;
+  color: #102b6a;
+  margin-bottom: 14px;
+}
+
+.service-card p,
+.rental-block p,
+.contact-card p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.service-card ul {
+  padding-left: 24px;
+  margin-top: 10px;
+}
+
+.service-card li {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
 .vehicle-card img {
-  height: 240px;
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
 }
 
-/* FLOATING BUTTON STRONGER */
+.vehicle-card-body {
+  padding: 24px;
+}
+
+.vehicle-card-body h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #ef3b2d;
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.vehicle-card-body p:last-child {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.rentals-cta {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.step-card {
+  text-align: center;
+  padding: 10px 16px;
+}
+
+.step-number {
+  display: inline-block;
+  font-size: 58px;
+  line-height: 1;
+  font-weight: 800;
+  color: #ef3b2d;
+  margin-bottom: 12px;
+}
+
+.step-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.contact-card a {
+  color: #102b6a;
+  font-weight: 800;
+  text-decoration: none;
+}
+
 .floating-call {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #ef3b2d;
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 16px 24px;
+  border-radius: 999px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+  z-index: 1100;
+}
+
+.site-footer {
+  background: #102b6a;
+  color: white;
+  text-align: center;
+  padding: 34px 20px 100px;
+}
+
+.footer-inner p {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-logo {
+    width: 240px;
+  }
+
+  .main-nav {
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .hero {
+    padding: 50px 0 36px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-text,
+  .section-heading p,
+  .cedar-point-banner p {
+    font-size: 18px;
+  }
+
+  .cedar-point-banner h2,
+  .section-heading h2 {
+    font-size: 34px;
+  }
+
+  .service-grid,
+  .inventory-grid,
+  .rentals-copy,
+  .steps-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vehicle-card img {
+    height: 240px;
+  }
+
+  .service-card,
+  .vehicle-card-body,
+  .rental-block,
+  .contact-card {
+    padding: 22px;
+  }
+
+  .floating-call {
+    right: 14px;
+    bottom: 14px;
+    padding: 14px 20px;
+  }
 }
